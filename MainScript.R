@@ -1,7 +1,8 @@
 library(lubridate)
 library(dplyr)
 # Reading the data
-PowerConsumption = read.table('C:/Users/Valdrich PC/Desktop/Valdrich/ML_Udemy/Coursera/Course3/FinalProject/CourseraEDAWeek1/Data/household_power_consumption.txt', 
+# Path censored for privacy reasons. The plot1.R file will work properly
+PowerConsumption = read.table('##/Data/household_power_consumption.txt', 
                               sep = ';', header = T, stringsAsFactors = F,
                               na.strings = '?')
 
