@@ -16,7 +16,7 @@ with(PowerConsumption, c(plot(DateTime, Sub_metering_1, ylab = 'Energy sub meter
                          lines(DateTime, Sub_metering_3, col = 'blue'),
                          legend('topright', col = c('black', 'red', 'blue'),
                                 legend = c('Sub_metering_1','Sub_metering_2','Sub_metering_3' ),
-                                lty = 'solid')))
+                                lty = 'solid', bty = 'n')))
 plot(PowerConsumption$DateTime, PowerConsumption$Global_reactive_power,
      type = 'l', xlab = '', ylab = 'Global Reactive Power', lwd = 0.001)
 dev.off()
