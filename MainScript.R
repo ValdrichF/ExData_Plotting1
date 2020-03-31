@@ -17,7 +17,7 @@ rm(dataSub)
 
 # Writing a copy of the subsetted data
 if (!file.exists('./Data')) dir.create('./Data')
-write.csv(PowerConsumption,'./Data/PowerConsumption.csv')
+write.csv(PowerConsumption,'./Data/PowerConsumption.csv', row.names = F)
 
 # Plot 1
 png('plot1.png', 480, 480)
